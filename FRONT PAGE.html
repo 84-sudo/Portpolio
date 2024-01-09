@@ -1,7 +1,217 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <body>
-            <h>MY PORTPOLIO</h>
-        </body>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/4bab0d4e28.js" crossorigin="anonymous"></script>
     </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                   
+                    <image src="http://logos.textgiraffe.com/logos/logo-name/Avinash-designstyle-kiddo-m.png" class="logo">
+                    
+                    
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-bars" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm <span>Avinash Saini</span><br>From UP, INDIA</h1>
+                </div>
+            </div>
+        </div>
+      <!--  -------------------------ABOUT ME --------------------------- -->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                         <div class="about-col-1">
+                            <img src="https://media.licdn.com/dms/image/D4D03AQFGZHtKXOLXzw/profile-displayphoto-shrink_800_800/0/1691033942687?e=2147483647&v=beta&t=mXSLs04HkP9v9pyubG41iAJ7DEtDxOcFPpc2jE5_TPA">
+                             </div>
+                         <div class="about-col-2"> 
+                         <h1 class="sub-title">About Me</h1>
+                         <p>Hi, I'm Avinash Saini,  I'm a professional Website Developer and I am seeking opportunities to join a company that can help me in
+                            enhancing my skills, strengthening my knowledge and realising my
+                            potential while making a significant contribution to the success of the
+                            company.</p>
+                         
+                            <div class="tab-titles">
+                                <p class="tablinks" onmouseover="openlink(event, 'Skill')">Skill</p>
+                                <p class="tablinks" onmouseover="openlink(event, 'Project')">Project</p>
+                                <p class="tablinks" onmouseover="openlink(event, 'Education')">Education</p>
+                              </div>
+                              
+                              <div id="Skill" class="tabcontent active-tab">
+                            
+                                <ul>
+                                  <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                                  <li><span>Web Development</span><br>Web App Development</li>
+                                  <li><span>App Development</span><br>Building Android/IOS  Apps</li>
+                              </ul>
+                              </div>
+                              
+                              <div id="Project" class="tabcontent">
+            
+                                <ul>
+                                  <li><span>Colleg Bloging Website</span><br>This website is like Twitter where we can write our own blogs and
+                                    publish it, globally
+                                    </li>
+                                  <li><span>Connecte Goal Website</span><br>In this website any student can give a mock Test and Interview,
+                                    for any recruitment process of IT company.
+                                    </li>
+                                  <li><span>Portfolio Website</span><br>In this website any one can easly Know about me.
+                                    </li>
+                              </ul>
+                              </div>
+                              
+                              <div id="Education" class="tabcontent">
+                                
+                                <ul>
+                                  <li><span>Class 10th </span><br>Radiant Academy</li>
+                                  <li><span>Class 12th</span><br>Radiant Academy</li>
+                                  <li><span>BCA</span><br>United Institute Of Management</li>
+                              </ul>
+                              </div>
+                              
+                              <div class="clearfix"></div>
+                         </div>
+                    </div>
+                </div>
+            </div> 
+
+           <!-- -------------------- Services --------------------------------------- -->
+        
+           <div id="services">
+            <div class="container">
+              <h1 class="sub-title">My Services</h1>
+              <div class="services-list">
+                     <div>
+                      <i class="fa-solid fa-code"></i>
+                      <h2>Web Design</h2>
+                      <p>Web designing is the process of planning, conceptualizing,
+                         and implementing the plan for designing a website in a way that is functional and offers a good user experience. </p>
+                      <a href="#">Learn more..</a> 
+                     </div>
+                     <div>
+                      <i class="fa-solid fa-code-compare"></i>
+                      <h2>Salesforce Developer</h2>
+                      <p>Web designing is the process of planning, conceptualizing,
+                        and implementing the plan for designing a website in a way that is functional and offers a good user experience. </p>
+                      <a href="#">Learn more..</a> 
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-virus-covid-slash"></i>
+                    <h2>App Design</h2>
+                    <p>Web designing is the process of planning, conceptualizing,
+                      and implementing the plan for designing a website in a way that is functional and offers a good user experience. </p>
+                    <a href="#">Learn more..</a> 
+                </div>
+              </div>
+            </div>
+           </div>
+
+<!-- ------------------------------- Portfolio -------------------------------------------  -->
+ 
+       <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+             <div class="work-list">
+              <div class="work">
+                <img src="https://adespresso.com/wp-content/uploads/2021/07/google-ads-sizes-update-2021.jpg">
+                <div class="layer">
+                  <h3>Websit Development</h3>
+                  <p>Web designing is the process of planning, conceptualizing and implementing the plan </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="https://adespresso.com/wp-content/uploads/2021/04/google-ads-recommendations-tool-update.jpg">
+                <div class="layer">
+                  <h3>Websit Development</h3>
+                  <p>Web designing is the process of planning, conceptualizing, and implementing the plan </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="https://adespresso.com/wp-content/uploads/2019/02/google-ads-strategy-plan.jpg">
+                <div class="layer">
+                  <h3>Websit Development</h3>
+                  <p>Web designing is the process of planning, conceptualizing, and implementing the plan </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+              </div>
+             </div>
+        </div>
+       </div>
+
+<!-- ------------------------------CONTACT--------------------------->
+
+       <div id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>avinavinashsaini214@gmail.com<br></p>
+                <p><i class="fa-brands fa-square-whatsapp"></i>8429640000</p>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/avinash-saini-35a27b239/"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://x.com/Avinash79208624?t=vsalVLdlv5gUN0gSjxLffQ&s=09"><i class="fa-brands fa-square-twitter"></i></a>
+                  <a><i class="fa-brands fa-square-instagram"></i></a>
+                  <a><i class="fa-brands fa-facebook"></i></a><br>
+                  <a href="https://1drv.ms/b/s!AihyrwJbQsMWgUjoNrCR7xzWTdHj?e=ejgN7V" download class="btn btn2">Download CV</a>
+                </div>
+              </div>
+              <div class="contact-right">
+                <form>
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn3">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+               <p>Made with <i class="fa-solid fa-heart"></i> by Avinash Saini</p>
+          </div>
+       </div>       
+
+<!------------------------------------------------------------------------------------------------------------------------------------------>
+
+           <script>
+            function openlink(evt, tabname) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(tabname).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            </script>
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+function openmenu(){
+  sidemenu.style.right = "0";
+}
+function closemenu(){
+  sidemenu.style.right = "0";
+}
+</script>
+    </body>
 </html>
